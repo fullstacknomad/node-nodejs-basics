@@ -7,7 +7,6 @@ import fs from "node:fs";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Import .cjs file - note: you may need to adjust this based on your setup
 import("./files/c.cjs").catch((err) => {
   console.error("Error importing c.cjs:", err);
 });
